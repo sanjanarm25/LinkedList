@@ -16,6 +16,18 @@ public class LinkedListMain {
 
         linkedList2.show();
 
+        LinkedList<Integer> linkedList6 = new LinkedList<>();
+        linkedList6.push(56);
+        linkedList6.push(70);
+
+        boolean isInserted = linkedList6.insertAfter(70, 30);
+        if (isInserted)
+            System.out.println("Element inserted successfully!");
+        else
+            System.out.println("Element not inserted!");
+        linkedList6.show();
+
+
 
     }
 }

@@ -41,6 +41,19 @@ public class LinkedListQueue {
         size++;
     }
 
+    public int dequeue() {
+        if (isEmpty()) {
+            System.out.println("Queue is empty");
+        }
+        int data = front.data;
+        front = front.next;
+        if (front == null) {
+            rear = null;
+        }
+        size--;
+        return data;
+    }
+
     public int peek() {
         if (isEmpty()) {
             System.out.println("Queue is empty");
@@ -67,6 +80,10 @@ public class LinkedListQueue {
             queue.enqueue(30);
             queue.enqueue(70);
             queue.display();
+
+        int dequeuedElement = queue.dequeue();
+        System.out.println("Dequeued element: " + dequeuedElement); // Output: Dequeued element: 56
+        queue.display();
         }
     }
 

@@ -16,18 +16,34 @@ public class LinkedListMain {
 
         linkedList2.show();
 
-        LinkedList<Integer> linkedList6 = new LinkedList<>();
-        linkedList6.push(56);
-        linkedList6.push(70);
+        LinkedList<Integer> linkedList3 = new LinkedList<>();
+        linkedList3.push(56);
+        linkedList3.push(70);
 
-        boolean isInserted = linkedList6.insertAfter(70, 30);
+        boolean isInserted = linkedList3.insertAfter(70, 30);
         if (isInserted)
             System.out.println("Element inserted successfully!");
         else
             System.out.println("Element not inserted!");
-        linkedList6.show();
+        linkedList3.show();
 
 
+        LinkedList<Integer> linkedList4 = new LinkedList<>();
+        linkedList4.push(70);
+        linkedList4.add(56);
+        linkedList4.push(30);
+        linkedList4.push(35);
+        linkedList4.add(45);
+
+        linkedList4.show();
+
+        Integer poppedData1 = linkedList4.pop();
+        if (poppedData1 == null)
+            System.out.println("Linked List is Empty");
+        else
+            System.out.println("The element popped is => " + poppedData1);
+
+        linkedList3.show();
 
     }
 }

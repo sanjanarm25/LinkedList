@@ -9,5 +9,13 @@ public class LinkedListMain {
 
         linkedList1.show();
 
+        LinkedList<Integer> linkedList2 = new LinkedList<>();
+        linkedList2.add(56);
+        linkedList2.add(30);
+        linkedList2.add(70);
+
+        linkedList2.show();
+
+
     }
 }

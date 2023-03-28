@@ -15,4 +15,13 @@ public class LinkedList<T> {
         }
     }
 
+    public void show() {
+        Node<T> temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " -> ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
     }

@@ -7,5 +7,7 @@ public class LinkedListMain {
         linkedList1.push(30);
         linkedList1.push(56);
 
+        linkedList1.show();
+
     }
 }

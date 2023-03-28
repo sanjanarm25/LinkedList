@@ -30,6 +30,7 @@ public class LinkedListMain {
 
         LinkedList<Integer> linkedList4 = new LinkedList<>();
         linkedList4.push(70);
+
         linkedList4.add(56);
         linkedList4.push(30);
         linkedList4.push(35);
